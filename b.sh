@@ -32,7 +32,7 @@ make -j$(nproc --all) O=out \
 function zupload()
 {
 git clone --depth=1 https://github.com/fjrXTR/AnyKernel3.git -b mt6781 AnyKernel
-cp out/arch/arm64/boot/Image.gz-dtb AnyKernel
+cp out/arch/arm64/boot/Image.gz AnyKernel
 cd AnyKernel
 zip -r9 fjrXTR-kernel-v1-fleur.zip *
 curl -T fjrXTR-kernel-v1-fleur.zip temp.sh
