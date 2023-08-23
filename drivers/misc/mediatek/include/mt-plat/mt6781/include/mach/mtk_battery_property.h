@@ -76,7 +76,7 @@
 #define DIFFERENCE_FULL_CV 1000 /*0.01%*/
 #define PSEUDO1_EN 1
 #define PSEUDO100_EN 1
-#define PSEUDO100_EN_DIS 1
+#define PSEUDO100_EN_DIS 0
 
 #define DIFF_SOC_SETTING 50	/* 0.01% */
 #define DIFF_BAT_TEMP_SETTING 1
@@ -174,7 +174,7 @@
 /* ZCV INTR */
 #define ZCV_SUSPEND_TIME 3
 #define SLEEP_CURRENT_AVG 200 /*0.1mA*/
-#define ZCV_CAR_GAP_PERCENTAGE 1
+#define ZCV_CAR_GAP_PERCENTAGE 5
 
 /* Additional battery table */
 #define ADDITIONAL_BATTERY_TABLE_EN 1
@@ -194,7 +194,7 @@
 
 
 #define SHUTDOWN_CONDITION_LOW_BAT_VOLT
-#define LOW_TEMP_DISABLE_LOW_BAT_SHUTDOWN 1
+#define LOW_TEMP_DISABLE_LOW_BAT_SHUTDOWN 0  /*changed for issue HTH-142150, not showdown in low temp. */
 #define LOW_TEMP_THRESHOLD 5
 
 #define BATTERY_TMP_TO_DISABLE_GM30 -50
