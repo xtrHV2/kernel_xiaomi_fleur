@@ -7,9 +7,9 @@ source ~/.bashrc && source ~/.profile
 export ARCH=arm64
 export KBUILD_BUILD_HOST="gitpodkesayanganku"
 export KBUILD_BUILD_USER="fjrXTR"
-git clone --depth=1 https://github.com/kdrag0n/proton-clang clang
-git clone --depth=1 https://github.com/sarthakroy2002/prebuilts_gcc_linux-x86_aarch64_aarch64-linaro-7 los-4.9-64
-git clone --depth=1 https://github.com/sarthakroy2002/linaro_arm-linux-gnueabihf-7.5 los-4.9-32
+git clone --depth=1 https://github.com/NusantaraDevs/clang clang -b dev/12.0
+git clone --depth=1 https://github.com/ghostrider-reborn/prebuilts_gcc_linux-x86_aarch64_aarch64-linaro-7 los-4.9-64
+git clone --depth=1 https://github.com/MayuriLabs/linaro_arm-linux-gnueabihf-7.5 los-4.9-32
 
 rm -rf AnyKernel
 make O=out ARCH=arm64 fleur_defconfig
